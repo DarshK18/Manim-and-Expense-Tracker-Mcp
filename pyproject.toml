@@ -1,0 +1,23 @@
+[project]
+name = "mcp-chatbot"
+version = "0.1.0"
+description = "Streamlit MCP chatbot with a local expense-tracking server"
+readme = "README.md"
+authors = [
+    { name = "DarshK18", email = "narayanikadam2@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.14.0",
+    "langchain-google-genai>=4.4.0",
+    "langchain-mcp-adapters>=0.3.2",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
